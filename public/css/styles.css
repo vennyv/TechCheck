@@ -1,25 +1,100 @@
-/* Example: Custom styles */
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #7a6df0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #00e6e6;
+}
+
+/* Main content styles */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
     padding: 20px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #1900ff;
+    margin-bottom: 20px;
 }
 
-ul li {
-    padding: 10px;
-    background-color: #f4f4f4;
-    margin-bottom: 10px;
+/* Grid for articles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
 }
 
-ul li a {
-    text-decoration: none;
-    color: #333;
+/* Card styles */
+.card {
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #1900ff;
 }
 
-img {
+.card img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+    border: 1px solid #4e497e;
+}
+
+.card h2 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #00e6e6;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #f0f0f0;
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Other elements for text emphasis */
+strong {
+    color: #00e6e6;
 }
