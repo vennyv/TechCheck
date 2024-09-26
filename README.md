@@ -1,12 +1,13 @@
-# listicle-app
+# WEB103 Project 1 - *TechCheck*
 
-# WEB103 Project 1 - *Name of App Here*
+Submitted by: **Venessa Maduka**
 
-Submitted by: **Your name here**
+About this web app: 
+**TechCheck provides a list of key insights and projections about the technology industry in 2024. This web app displays five major facts related to Artificial Intelligence, Cloud Computing, Blockchain Technology, Remote Work, and 5G Networks. Each fact includes important data and predictions sourced from authoritative reports. Users can explore each fact in more detail by clicking on the corresponding images, which link to additional resources.
 
-About this web app: **App description here**
+This project is built using vanilla HTML, CSS, and JavaScript, styled with Picocss for a modern, responsive look. The backend is powered by Express.js, which serves static content and handles routing for the site. Each list item links to a detailed view, and the application includes a custom 404 error page for unmatched routes.**
 
-Time spent: **X** hours
+Time spent: **2** hours
 
 ## Required Features
 
