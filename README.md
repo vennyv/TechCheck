@@ -1,4 +1,4 @@
-# WEB103 Project 1 - *TechCheck*
+# CodePath WEB103 Project 1 - *TechCheck*
 
 Submitted by: **Venessa Maduka**
 
