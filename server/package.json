@@ -1,20 +1,18 @@
 {
-<<<<<<< HEAD
-  "name": "listicle-app",
+  "name": "server",
   "version": "1.0.0",
-<<<<<<< HEAD
   "main": "index.js",
   "scripts": {
-=======
-  "main": "server.js",
-  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
->>>>>>> d652689 (TechCheck commit)
-    "test": "echo \"Error: no test specified\" && exit 1"
-=======
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "devDependencies": {
     "nodemon": "^3.1.7"
->>>>>>> 058a5e9 (TechCheck rebuild)
   },
   "dependencies": {
     "cors": "^2.8.5",

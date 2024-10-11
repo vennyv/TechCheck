@@ -1,0 +1,47 @@
+<!-- client/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>TechCheck</title>
+  
+  <!-- PicoCSS -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="container">
+    <h1>TechCheck</h1>
+  </header>
+  
+  <main class="container">
+    <section id="items-list">
+      <h2>List of Tech Topics</h2>
+      <ul>
+        <!-- List items will be populated here -->
+      </ul>
+    </section>
+    
+    <section id="item-details" hidden>
+      <button id="back-button">← Back to List</button>
+      <h2 id="item-title"></h2>
+      <img id="item-image" src="" alt="" style="max-width: 100%;">
+      <p id="item-text"></p>
+      <p><strong>Submitted by:</strong> <span id="item-submitted-by"></span></p>
+    </section>
+  </main>
+  
+  <footer class="container">
+    <p>&copy; 2024 TechCheck</p>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
