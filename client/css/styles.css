@@ -2,12 +2,11 @@
 
 /* Center images */
 #item-image {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  /* Style the back button */
-  #back-button {
-    margin-bottom: 20px;
-  }
-  
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style the back button */
+#back-button {
+  margin-bottom: 20px;
+}

@@ -1,9 +1,7 @@
-// server/server.js
-
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const routes = require('./routes/items');
+const itemRoutes = require('./routes/items');
 
 dotenv.config();
 
@@ -15,14 +13,19 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use('/api', routes);
+app.use('/api/items', itemRoutes);
 
 // 404 Handler
 app.use((req, res, next) => {
-  res.status(404).send('404: Page Not Found');
+  res.status(404).json({ message: 'Route Not Found' });
 });
 
-// Start Server
+// Global Error Handler
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ message: 'Server Error' });
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
